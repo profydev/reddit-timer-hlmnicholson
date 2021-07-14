@@ -6,11 +6,6 @@ const GlobalStyle = createGlobalStyle`
   body{
       padding: 0;
       margin: 0;
-      font-family: 'Montserrat', sans-serif;
-  }
-  h1{
-    font-family: 'Bitter', serif;
-  }
 `;
 
 export default GlobalStyle;
