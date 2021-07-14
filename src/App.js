@@ -1,18 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from './Components/Home';
-import Search from './Components/Search';
+import GlobalStyle from './GlobalStyle';
 
 function App() {
   return (
     <Router>
+      <GlobalStyle />
       <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route exact path="/search">
-          <Search />
-        </Route>
+        <Route exact path="/" />
+        <Route exact path="/search" />
       </Switch>
     </Router>
   );
