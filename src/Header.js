@@ -1,6 +1,6 @@
 import React from 'react';
 
-function PageHeader() {
+function Header() {
   return (
     <header>
       Header PlaceHolder
@@ -9,4 +9,4 @@ function PageHeader() {
   );
 }
 
-export default PageHeader;
+export default Header;

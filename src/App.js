@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import { Normalize } from 'styled-normalize';
-import PageHeader from './PageHeader';
+import Header from './Header';
 import GlobalStyle from './GlobalStyle';
 import theme from './theme';
 
@@ -12,7 +12,7 @@ function App() {
       <Router>
         <Normalize />
         <GlobalStyle />
-        <PageHeader />
+        <Header />
         <Switch>
           <Route exact path="/">Home</Route>
           <Route path="/search">Search</Route>
