@@ -50,6 +50,10 @@ const GlobalStyle = createGlobalStyle`
     line-height: ${(props) => props.theme.font.lineHeight.default};
     color: ${(props) => props.theme.color.text}
   }
+
+  header: {
+    display: 'flex';
+  }
 `;
 
 export default GlobalStyle;

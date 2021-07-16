@@ -14,6 +14,9 @@ const theme = {
       default: 1.69,
     },
   },
+  header: {
+    display: 'flex',
+  },
 };
 
 export default theme;
