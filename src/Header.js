@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from './logo.svg';
-
-const Logo = () => <Link to="/"><img src={logo} alt="Logo" /></Link>;
+import Logo from './Logo';
 
 function Header() {
   return (
     <header>
       <Logo />
-      Header PlaceHolder
+      <a href="#how-it-works">How it works</a>
+      <a href="#about">About</a>
+      <Link to="/search?q=javascript">Search</Link>
     </header>
 
   );
