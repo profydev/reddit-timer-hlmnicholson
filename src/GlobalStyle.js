@@ -51,9 +51,6 @@ const GlobalStyle = createGlobalStyle`
     color: ${(props) => props.theme.color.text}
   }
 
-  header: {
-    display: 'flex';
-  }
 `;
 
 export default GlobalStyle;

@@ -12,18 +12,18 @@ const Container = styled.header`
 `;
 
 const Nav = styled.nav`
-  border: 2px solid green;
+  margin-left: 26px;
 `;
 
 const Logo = styled(Link)`
-padding-left: 200px;
-
+  margin-top: 32px;
+  margin-left: 80px;
+  display: block;
 `;
 
 const NavLink = styled(Link)`
- margin: 10px;
- text-decoration: none;
-
+  margin: 10px;
+  text-decoration: none;
 `;
 
 function Header() {
