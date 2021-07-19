@@ -1,30 +1,41 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import Logo from './Logo';
-import Search from './Search';
+// import LogoLink from './Logo';
+// import Search from './Search';
+import logo from './logo.svg';
 
-const Wrapper = styled.div`
+const Container = styled.header`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+`;
 
-  #logo {
-    border: 2px solid green;
-  }
+const Nav = styled.nav`
+  border: 2px solid green;
+`;
+
+const Logo = styled(Link)`
+padding-left: 200px;
+
+`;
+
+const NavLink = styled(Link)`
+ margin: 10px;
+ text-decoration: none;
+
 `;
 
 function Header() {
   return (
-    <header>
-      <Wrapper>
-        <Logo id="logo" />
-        <nav>
-          <Search />
-          <a href="/#how-it-works">How it works</a>
-          <a href="/#about">About</a>
-        </nav>
-      </Wrapper>
-    </header>
+    <Container>
+      <Logo to="/#"><img src={logo} alt="Logo" /></Logo>
+      <Nav>
+        <NavLink to="/search?q=javascript">Search</NavLink>
+        <NavLink to="/#how-it-works">How it works</NavLink>
+        <NavLink to="/#about">About</NavLink>
+      </Nav>
+    </Container>
   );
 }
 
