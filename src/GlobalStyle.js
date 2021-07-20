@@ -6,7 +6,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: "Montserrat";
     font-weight: 400;
     font-style: normal;
-    src: url("/font/Montserrat-Regular.woff2") format("woff2"),
+    src: url("/fonts/Montserrat-Regular.woff2") format("woff2"),
     url("/font/Montserrat-Regular.woff") format("woff");
   }
 
@@ -15,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: "Montserrat";
     font-weight: 500;
     font-style: normal;
-    src: url("/font/Montserrat-Mediumn.woff2") format("woff2"),
+    src: url("/fonts/Montserrat-Mediumn.woff2") format("woff2"),
     url("/font/Montserrat-Mediumn.woff") format("woff");
   }
 
@@ -24,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: "Montserrat";
     font-weight: 600;
     font-style: normal;
-    src: url("/font/Montserrat-SemiBold.woff2") format("woff2"),
+    src: url("/fonts/Montserrat-SemiBold.woff2") format("woff2"),
     url("/font/Montserrat-SemiBold.woff") format("woff");
   }
 
@@ -33,14 +33,14 @@ const GlobalStyle = createGlobalStyle`
     font-family: "Montserrat";
     font-weight: 700;
     font-style: normal;
-    src: url("/font/Montserrat-Bold.woff2") format("woff2"),
+    src: url("/fonts/Montserrat-Bold.woff2") format("woff2"),
     url("/font/Montserrat-Bold.woff") format("woff");
   }
 
   /** Bitter Regular **/
   @font-face {
     font-family: "Bitter";
-    src: url("/font/Bitter-Regular.woff2") format("woff2"),
+    src: url("/fonts/Bitter-Regular.woff2") format("woff2"),
     url("/font/Bitter-Regular.woff") format("woff");
   }
 

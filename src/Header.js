@@ -12,7 +12,9 @@ const Container = styled.header`
 `;
 
 const Nav = styled.nav`
-  margin-left: 26px;
+  margin-top: 35px;
+  margin-right: 79px;
+  border: 2px solid red;
 `;
 
 const Logo = styled(Link)`
@@ -22,8 +24,9 @@ const Logo = styled(Link)`
 `;
 
 const NavLink = styled(Link)`
-  margin: 10px;
   text-decoration: none;
+  size: 16px;
+  margin-left: 26px;
 `;
 
 function Header() {
