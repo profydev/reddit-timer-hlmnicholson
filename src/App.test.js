@@ -20,7 +20,6 @@ describe('Header', () => {
     userEvent.click(link);
 
     expect(screen.getByText(/home/i)).toBeInTheDocument();
-
     screen.debug();
   });
 
@@ -31,5 +30,16 @@ describe('Header', () => {
     userEvent.click(link);
 
     expect(screen.getByText(/placeholder/i)).toBeInTheDocument();
+    screen.debug();
+  });
+
+  test('#how-it-works link correctly updates the url', () => {
+    setup();
+
+    const link = screen.getByRole('link', { name: /how it works/i });
+    userEvent.click(link);
+
+    expect(window.location.hash).toMatch(/#how-it-works/);
+    screen.debug();
   });
 });
