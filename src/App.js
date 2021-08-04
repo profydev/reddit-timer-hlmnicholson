@@ -15,7 +15,7 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/">Home</Route>
-          <Route path="/search">Search</Route>
+          <Route path="/search">Placeholder</Route>
           <Route>404 - Not Found</Route>
         </Switch>
       </Router>

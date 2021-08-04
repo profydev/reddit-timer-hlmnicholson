@@ -23,4 +23,13 @@ describe('Header', () => {
 
     screen.debug();
   });
+
+  test('Search link initiates the search function', () => {
+    setup();
+
+    const link = screen.getByRole('link', { name: /search/i });
+    userEvent.click(link);
+
+    expect(screen.getByText(/placeholder/i)).toBeInTheDocument();
+  });
 });
