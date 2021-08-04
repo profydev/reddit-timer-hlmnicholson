@@ -4,7 +4,7 @@ import logo from './logo.svg';
 
 function Header() {
   return (
-    <S.Wrapper>
+    <S.Wrapper as="header">
       <S.Logo to="/#"><img src={logo} alt="Logo" /></S.Logo>
       <S.Nav>
         <S.NavLink to="/search/javascript">Search</S.NavLink>
